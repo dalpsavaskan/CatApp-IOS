@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1913356F21CAB2C4003BE540 /* catpurr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1913356E21CAB2C4003BE540 /* catpurr.mp3 */; };
+		1913357121CAB2E4003BE540 /* catmeow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1913357021CAB2E4003BE540 /* catmeow.mp3 */; };
 		194E4CCC21B1CAA5001B2110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4CCB21B1CAA5001B2110 /* AppDelegate.swift */; };
 		194E4CCE21B1CAA5001B2110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4CCD21B1CAA5001B2110 /* ViewController.swift */; };
 		194E4CD121B1CAA5001B2110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194E4CCF21B1CAA5001B2110 /* Main.storyboard */; };
@@ -14,6 +16,14 @@
 		194E4CD621B1CAA6001B2110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194E4CD421B1CAA6001B2110 /* LaunchScreen.storyboard */; };
 		194E4CE121B1CAA6001B2110 /* MyKittensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4CE021B1CAA6001B2110 /* MyKittensTests.swift */; };
 		194E4CEC21B1CAA6001B2110 /* MyKittensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4CEB21B1CAA6001B2110 /* MyKittensUITests.swift */; };
+		194E4CFB21B1D1BC001B2110 /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4CFA21B1D1BC001B2110 /* Kitten.swift */; };
+		194E4CFD21B1D536001B2110 /* KittenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4CFC21B1D536001B2110 /* KittenDataSource.swift */; };
+		194E4D0421B1D887001B2110 /* KittenPlayroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4D0321B1D887001B2110 /* KittenPlayroomViewController.swift */; };
+		194E4D0621B1E061001B2110 /* KittenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4D0521B1E061001B2110 /* KittenCollectionViewController.swift */; };
+		194E4D0821B1E2D2001B2110 /* KittenExamineRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4D0721B1E2D2001B2110 /* KittenExamineRoomViewController.swift */; };
+		194E4D0A21B1E2E9001B2110 /* KittenCareRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194E4D0921B1E2E9001B2110 /* KittenCareRoomViewController.swift */; };
+		19D2241621C2D762003023FE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D2241521C2D762003023FE /* CustomButton.swift */; };
+		19D8CDFE21B2A3CD00BB5EC3 /* KittenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CDFD21B2A3CD00BB5EC3 /* KittenCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1913356E21CAB2C4003BE540 /* catpurr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catpurr.mp3; sourceTree = "<group>"; };
+		1913357021CAB2E4003BE540 /* catmeow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catmeow.mp3; sourceTree = "<group>"; };
 		194E4CC821B1CAA5001B2110 /* MyKittens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKittens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		194E4CCB21B1CAA5001B2110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		194E4CCD21B1CAA5001B2110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,14 @@
 		194E4CE721B1CAA6001B2110 /* MyKittensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKittensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		194E4CEB21B1CAA6001B2110 /* MyKittensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKittensUITests.swift; sourceTree = "<group>"; };
 		194E4CED21B1CAA6001B2110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		194E4CFA21B1D1BC001B2110 /* Kitten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitten.swift; sourceTree = "<group>"; };
+		194E4CFC21B1D536001B2110 /* KittenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenDataSource.swift; sourceTree = "<group>"; };
+		194E4D0321B1D887001B2110 /* KittenPlayroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenPlayroomViewController.swift; sourceTree = "<group>"; };
+		194E4D0521B1E061001B2110 /* KittenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenCollectionViewController.swift; sourceTree = "<group>"; };
+		194E4D0721B1E2D2001B2110 /* KittenExamineRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenExamineRoomViewController.swift; sourceTree = "<group>"; };
+		194E4D0921B1E2E9001B2110 /* KittenCareRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenCareRoomViewController.swift; sourceTree = "<group>"; };
+		19D2241521C2D762003023FE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		19D8CDFD21B2A3CD00BB5EC3 /* KittenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +117,15 @@
 		194E4CCA21B1CAA5001B2110 /* MyKittens */ = {
 			isa = PBXGroup;
 			children = (
+				19D8CDFC21B2A3A600BB5EC3 /* Cells */,
+				194E4CFE21B1D793001B2110 /* ViewControllers */,
+				194E4CF921B1D109001B2110 /* Model */,
 				194E4CCB21B1CAA5001B2110 /* AppDelegate.swift */,
 				194E4CCD21B1CAA5001B2110 /* ViewController.swift */,
 				194E4CCF21B1CAA5001B2110 /* Main.storyboard */,
 				194E4CD221B1CAA6001B2110 /* Assets.xcassets */,
+				1913357021CAB2E4003BE540 /* catmeow.mp3 */,
+				1913356E21CAB2C4003BE540 /* catpurr.mp3 */,
 				194E4CD421B1CAA6001B2110 /* LaunchScreen.storyboard */,
 				194E4CD721B1CAA6001B2110 /* Info.plist */,
 			);
@@ -123,6 +148,35 @@
 				194E4CED21B1CAA6001B2110 /* Info.plist */,
 			);
 			path = MyKittensUITests;
+			sourceTree = "<group>";
+		};
+		194E4CF921B1D109001B2110 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				194E4CFA21B1D1BC001B2110 /* Kitten.swift */,
+				194E4CFC21B1D536001B2110 /* KittenDataSource.swift */,
+				19D2241521C2D762003023FE /* CustomButton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		194E4CFE21B1D793001B2110 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				194E4D0321B1D887001B2110 /* KittenPlayroomViewController.swift */,
+				194E4D0521B1E061001B2110 /* KittenCollectionViewController.swift */,
+				194E4D0721B1E2D2001B2110 /* KittenExamineRoomViewController.swift */,
+				194E4D0921B1E2E9001B2110 /* KittenCareRoomViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		19D8CDFC21B2A3A600BB5EC3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				19D8CDFD21B2A3CD00BB5EC3 /* KittenCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				194E4CD621B1CAA6001B2110 /* LaunchScreen.storyboard in Resources */,
+				1913356F21CAB2C4003BE540 /* catpurr.mp3 in Resources */,
 				194E4CD321B1CAA6001B2110 /* Assets.xcassets in Resources */,
+				1913357121CAB2E4003BE540 /* catmeow.mp3 in Resources */,
 				194E4CD121B1CAA5001B2110 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194E4D0821B1E2D2001B2110 /* KittenExamineRoomViewController.swift in Sources */,
 				194E4CCE21B1CAA5001B2110 /* ViewController.swift in Sources */,
+				194E4D0621B1E061001B2110 /* KittenCollectionViewController.swift in Sources */,
+				19D8CDFE21B2A3CD00BB5EC3 /* KittenCollectionViewCell.swift in Sources */,
+				194E4D0421B1D887001B2110 /* KittenPlayroomViewController.swift in Sources */,
+				19D2241621C2D762003023FE /* CustomButton.swift in Sources */,
 				194E4CCC21B1CAA5001B2110 /* AppDelegate.swift in Sources */,
+				194E4CFB21B1D1BC001B2110 /* Kitten.swift in Sources */,
+				194E4CFD21B1D536001B2110 /* KittenDataSource.swift in Sources */,
+				194E4D0A21B1E2E9001B2110 /* KittenCareRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,24 +1,592 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GEG-1h-hcI">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Playroom-->
+        <scene sceneID="5hj-E1-yhO">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="ng0-Xy-b5P" customClass="KittenPlayroomViewController" customModule="MyKittens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k57-Ui-EIT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hc5-Vz-d1s">
+                                <rect key="frame" x="201" y="394" width="68" height="76"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="DmL-PN-4qO"/>
+                                    <constraint firstAttribute="width" secondItem="Hc5-Vz-d1s" secondAttribute="height" multiplier="17:19" id="QBP-ic-y9y"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EGc-0I-B0a" appends="YES" id="Qv8-Iy-DJx"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="cwm-55-bev">
+                                <rect key="frame" x="115" y="473" width="68" height="76"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cwm-55-bev" secondAttribute="height" multiplier="17:19" id="LbX-jY-9NF"/>
+                                    <constraint firstAttribute="height" constant="76" id="tq8-Ru-mZD"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Bw4-Jx-ydw" appends="YES" id="59E-my-5UI"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="sj1-PL-HeR">
+                                <rect key="frame" x="231" y="498" width="68" height="76"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sj1-PL-HeR" secondAttribute="height" multiplier="17:19" id="CmU-Os-8c8"/>
+                                    <constraint firstAttribute="height" constant="76" id="rnb-Ih-Ktb"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TNh-Vr-9yG" appends="YES" id="mzB-iS-E9e"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="svD-VQ-NxE">
+                                <rect key="frame" x="96" y="601" width="68" height="76"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="svD-VQ-NxE" secondAttribute="height" multiplier="17:19" id="er8-xE-Vdm"/>
+                                    <constraint firstAttribute="height" constant="76" id="shg-N3-COQ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7Vv-12-qJb" appends="YES" id="lVO-gG-gPA"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="FYk-LT-nV1">
+                                <rect key="frame" x="250" y="637" width="68" height="76"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FYk-LT-nV1" secondAttribute="height" multiplier="17:19" id="Bed-e9-v8Y"/>
+                                    <constraint firstAttribute="height" constant="76" id="Q3n-iI-hcA"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="V5e-Dg-m2V" appends="YES" id="COQ-07-7dn"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="zwB-tp-akK">
+                                <rect key="frame" x="109" y="346" width="68" height="76"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="nuC-Lb-rSh"/>
+                                    <constraint firstAttribute="width" secondItem="zwB-tp-akK" secondAttribute="height" multiplier="17:19" id="oUJ-ul-J6a"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cZa-dr-YOd" appends="YES" id="Zxd-2E-YXf"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quT-Hd-JWQ" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="201" y="385" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJf-S5-fC7" kind="show" id="ZEc-95-rEp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNV-2z-Knh" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="104" y="465" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heart">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJf-S5-fC7" kind="show" id="ejz-Ug-Dsb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-oE-Zlu" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="232" y="486" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJf-S5-fC7" kind="show" id="Jn0-AK-Cjn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-BQ-lhA" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="90" y="333" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJf-S5-fC7" kind="show" id="0co-1d-ObC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mca-Bf-RHC" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="90" y="586" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJf-S5-fC7" kind="show" id="Qe3-Q0-Jtd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCC-iT-n21" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="239" y="637" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="heart">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uJf-S5-fC7" kind="show" id="CI6-Ga-hg2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52V-Fs-n1c" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                <rect key="frame" x="129" y="710" width="113" height="59"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal" title="Interact">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dW5-Pd-TW4" kind="show" id="T8N-Mw-gUz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cwm-55-bev" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="7xD-EL-ves"/>
+                            <constraint firstItem="FYk-LT-nV1" firstAttribute="centerY" secondItem="3Fz-bc-AMa" secondAttribute="centerY" id="8jm-pG-Fbr"/>
+                            <constraint firstItem="Hc5-Vz-d1s" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="9JI-7J-dwx"/>
+                            <constraint firstItem="3Fz-bc-AMa" firstAttribute="bottom" secondItem="52V-Fs-n1c" secondAttribute="bottom" constant="82" id="ANg-Da-ZZ1"/>
+                            <constraint firstItem="zwB-tp-akK" firstAttribute="centerY" secondItem="3Fz-bc-AMa" secondAttribute="centerY" id="JQs-4j-oa9"/>
+                            <constraint firstItem="sj1-PL-HeR" firstAttribute="centerY" secondItem="3Fz-bc-AMa" secondAttribute="centerY" id="PMu-5a-hNB"/>
+                            <constraint firstItem="sj1-PL-HeR" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="Rvq-NY-oa3"/>
+                            <constraint firstItem="cwm-55-bev" firstAttribute="centerY" secondItem="3Fz-bc-AMa" secondAttribute="centerY" id="Vl6-qt-A6A"/>
+                            <constraint firstItem="svD-VQ-NxE" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="Yvp-e2-pnB"/>
+                            <constraint firstItem="svD-VQ-NxE" firstAttribute="centerY" secondItem="3Fz-bc-AMa" secondAttribute="centerY" id="gWw-fK-2fp"/>
+                            <constraint firstItem="zwB-tp-akK" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="gbA-Eo-6T5"/>
+                            <constraint firstItem="52V-Fs-n1c" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="kFR-jn-Wpr"/>
+                            <constraint firstItem="FYk-LT-nV1" firstAttribute="centerX" secondItem="3Fz-bc-AMa" secondAttribute="centerX" id="nL3-Eo-SSq"/>
+                            <constraint firstItem="Hc5-Vz-d1s" firstAttribute="centerY" secondItem="3Fz-bc-AMa" secondAttribute="centerY" id="teI-Pv-Kby"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Fz-bc-AMa"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Playroom" id="pwF-Hx-jda"/>
+                    <connections>
+                        <outlet property="kittenFive" destination="svD-VQ-NxE" id="dqF-xk-gFf"/>
+                        <outlet property="kittenFiveButton" destination="mca-Bf-RHC" id="ekn-TX-GGL"/>
+                        <outlet property="kittenFiveTapGesture" destination="7Vv-12-qJb" id="fcz-ZA-XzQ"/>
+                        <outlet property="kittenFour" destination="zwB-tp-akK" id="t3b-qk-oG8"/>
+                        <outlet property="kittenFourButton" destination="GJq-BQ-lhA" id="ykd-L3-CsD"/>
+                        <outlet property="kittenFourTapGesture" destination="cZa-dr-YOd" id="dbF-PQ-kke"/>
+                        <outlet property="kittenOne" destination="Hc5-Vz-d1s" id="A1J-G0-dVH"/>
+                        <outlet property="kittenOneButton" destination="quT-Hd-JWQ" id="9C5-3X-CQg"/>
+                        <outlet property="kittenOneTapGesture" destination="EGc-0I-B0a" id="gJF-T1-mSP"/>
+                        <outlet property="kittenSix" destination="FYk-LT-nV1" id="N4y-AC-CK8"/>
+                        <outlet property="kittenSixButton" destination="wCC-iT-n21" id="spB-gR-JPU"/>
+                        <outlet property="kittenSixTapGesture" destination="V5e-Dg-m2V" id="Stt-GB-Y6m"/>
+                        <outlet property="kittenThree" destination="sj1-PL-HeR" id="cDL-QS-O9i"/>
+                        <outlet property="kittenThreeButton" destination="mhl-oE-Zlu" id="zry-ZL-pUQ"/>
+                        <outlet property="kittenThreeTapGesture" destination="TNh-Vr-9yG" id="g12-Wf-He6"/>
+                        <outlet property="kittenTwo" destination="cwm-55-bev" id="jMN-sF-xiN"/>
+                        <outlet property="kittenTwoButton" destination="yNV-2z-Knh" id="5rz-nn-gaH"/>
+                        <outlet property="kittenTwoTapGesture" destination="Bw4-Jx-ydw" id="WVe-S7-fz7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aN2-sD-dkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="EGc-0I-B0a">
+                    <connections>
+                        <action selector="kittenOneTap:" destination="ng0-Xy-b5P" id="LkJ-xt-sSg"/>
+                        <outlet property="delegate" destination="ng0-Xy-b5P" id="1lb-Rl-bam"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cZa-dr-YOd">
+                    <connections>
+                        <action selector="kittenFourTap:" destination="ng0-Xy-b5P" id="nH0-qL-Mkc"/>
+                        <outlet property="delegate" destination="ng0-Xy-b5P" id="qeK-Hx-Tgc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Bw4-Jx-ydw">
+                    <connections>
+                        <action selector="kittenTwoTap:" destination="ng0-Xy-b5P" id="rQe-Nv-3Za"/>
+                        <outlet property="delegate" destination="ng0-Xy-b5P" id="4UM-fl-a3Q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="TNh-Vr-9yG">
+                    <connections>
+                        <action selector="kittenThreeTap:" destination="ng0-Xy-b5P" id="NxN-e2-evK"/>
+                        <outlet property="delegate" destination="ng0-Xy-b5P" id="Lhp-Vq-34I"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7Vv-12-qJb">
+                    <connections>
+                        <action selector="kittenFiveTap:" destination="ng0-Xy-b5P" id="bc6-QI-l5F"/>
+                        <outlet property="delegate" destination="ng0-Xy-b5P" id="tPZ-2w-gOz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="V5e-Dg-m2V">
+                    <connections>
+                        <action selector="kittenSixTap:" destination="ng0-Xy-b5P" id="UhK-MK-R2l"/>
+                        <outlet property="delegate" destination="ng0-Xy-b5P" id="MXL-9Z-pxI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1012" y="150"/>
+        </scene>
+        <!--Kitten Examine Room View Controller-->
+        <scene sceneID="t5y-dm-y6g">
+            <objects>
+                <viewController id="uJf-S5-fC7" customClass="KittenExamineRoomViewController" customModule="MyKittens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roY-s4-iUf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeK-Rq-bI7">
+                                <rect key="frame" x="182" y="421" width="50" height="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBk-D7-Tdn">
+                                <rect key="frame" x="182" y="451" width="50" height="21"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-Kg-drQ">
+                                <rect key="frame" x="181.66666666666666" y="480" width="51" height="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L98-uu-77e">
+                                <rect key="frame" x="182" y="510" width="50" height="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8C-kr-MO3">
+                                <rect key="frame" x="182" y="540" width="50" height="21"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-od-XuC">
+                                <rect key="frame" x="182" y="569" width="50" height="22"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zzC-Nx-Mdr">
+                                <rect key="frame" x="124" y="211" width="167" height="136"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zzC-Nx-Mdr" secondAttribute="height" multiplier="167:136" id="V89-UY-b19"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dI7-od-XuC" firstAttribute="centerX" secondItem="zGr-dC-x9d" secondAttribute="centerX" id="034-oa-b33"/>
+                            <constraint firstItem="h8C-kr-MO3" firstAttribute="top" secondItem="L98-uu-77e" secondAttribute="bottom" constant="8" id="7uu-Dp-oJX"/>
+                            <constraint firstItem="zGr-dC-x9d" firstAttribute="trailing" secondItem="zzC-Nx-Mdr" secondAttribute="trailing" constant="123" id="F2a-aY-TMM"/>
+                            <constraint firstItem="rBk-D7-Tdn" firstAttribute="centerX" secondItem="zGr-dC-x9d" secondAttribute="centerX" id="F5r-jE-8ln"/>
+                            <constraint firstItem="VeK-Rq-bI7" firstAttribute="centerX" secondItem="zGr-dC-x9d" secondAttribute="centerX" id="F6z-4p-oiK"/>
+                            <constraint firstItem="L98-uu-77e" firstAttribute="centerX" secondItem="zGr-dC-x9d" secondAttribute="centerX" id="Mds-n7-GZc"/>
+                            <constraint firstItem="zzC-Nx-Mdr" firstAttribute="leading" secondItem="zGr-dC-x9d" secondAttribute="leading" constant="124" id="OhR-T9-9fc"/>
+                            <constraint firstItem="rBk-D7-Tdn" firstAttribute="top" secondItem="VeK-Rq-bI7" secondAttribute="bottom" constant="8" id="PoI-UG-WQ6"/>
+                            <constraint firstItem="dI7-od-XuC" firstAttribute="top" secondItem="h8C-kr-MO3" secondAttribute="bottom" constant="8" id="djH-UT-czN"/>
+                            <constraint firstItem="WFw-Kg-drQ" firstAttribute="top" secondItem="rBk-D7-Tdn" secondAttribute="bottom" constant="8" id="fIq-PI-e6c"/>
+                            <constraint firstItem="zzC-Nx-Mdr" firstAttribute="top" secondItem="zGr-dC-x9d" secondAttribute="top" constant="123" id="nfH-Ub-wqI"/>
+                            <constraint firstItem="h8C-kr-MO3" firstAttribute="centerX" secondItem="zGr-dC-x9d" secondAttribute="centerX" id="oWR-9g-WuR"/>
+                            <constraint firstItem="L98-uu-77e" firstAttribute="top" secondItem="WFw-Kg-drQ" secondAttribute="bottom" constant="8" id="sJb-KP-fEB"/>
+                            <constraint firstItem="WFw-Kg-drQ" firstAttribute="centerX" secondItem="zGr-dC-x9d" secondAttribute="centerX" id="vzf-GW-rce"/>
+                            <constraint firstItem="VeK-Rq-bI7" firstAttribute="top" secondItem="zzC-Nx-Mdr" secondAttribute="bottom" constant="74" id="xrR-Ox-yXV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGr-dC-x9d"/>
+                    </view>
+                    <connections>
+                        <outlet property="kittemExamineImage" destination="zzC-Nx-Mdr" id="8j7-67-5Va"/>
+                        <outlet property="kittenAgeLabel" destination="L98-uu-77e" id="Xfa-M2-lsU"/>
+                        <outlet property="kittenColorLabel" destination="rBk-D7-Tdn" id="d3e-2h-lDb"/>
+                        <outlet property="kittenLovelinessLabel" destination="h8C-kr-MO3" id="mxw-6r-Vjb"/>
+                        <outlet property="kittenNameLabel" destination="VeK-Rq-bI7" id="gRb-WI-oEo"/>
+                        <outlet property="kittenSexLabel" destination="WFw-Kg-drQ" id="FKc-tV-rwe"/>
+                        <outlet property="kittenWildnessLabel" destination="dI7-od-XuC" id="cDs-6F-kwx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gg-fg-8h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="IxU-pp-NGg">
+                    <connections>
+                        <action selector="kittenLoveAct:" destination="uJf-S5-fC7" id="Dc4-kA-5pg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="anh-4x-UG6">
+                    <connections>
+                        <action selector="kittenLoveSwipe:" destination="uJf-S5-fC7" id="KNh-jJ-tCb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1524.6376811594205" y="1014.5089285714286"/>
+        </scene>
+        <!--Kitten Collection View Controller-->
+        <scene sceneID="RhJ-oO-2K3">
+            <objects>
+                <viewController id="dW5-Pd-TW4" customClass="KittenCollectionViewController" customModule="MyKittens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZF-jJ-rWy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QtY-sS-2Bw">
+                                <rect key="frame" x="34" y="107" width="347" height="692"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NDs-M2-Hsf">
+                                    <size key="itemSize" width="304" height="108"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kittenCell" id="j2e-Xb-occ" customClass="KittenCollectionViewCell" customModule="MyKittens" customModuleProvider="target">
+                                        <rect key="frame" x="21.666666666666668" y="0.0" width="304" height="108"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="304" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8a-hW-U4J">
+                                                    <rect key="frame" x="118" y="20" width="68" height="76"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="N8a-hW-U4J" secondAttribute="height" multiplier="17:19" id="ta1-g9-s2f"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myl-mV-eV0" userLabel="Care" customClass="CustomButton" customModule="MyKittens">
+                                                    <rect key="frame" x="219.66666666666666" y="20" width="38.999999999999972" height="31"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                    <state key="normal" title="Care">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="6vN-dF-CeM" kind="show" id="7Nn-Uh-KXZ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyE-uC-a4O" userLabel="Examine" customClass="CustomButton" customModule="MyKittens" customModuleProvider="target">
+                                                    <rect key="frame" x="201" y="58" width="96" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                    <state key="normal" title="Examine">
+                                                        <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="uJf-S5-fC7" kind="show" id="KR4-SJ-VID"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1P-ab-UvH">
+                                                    <rect key="frame" x="20" y="44" width="93" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="N8a-hW-U4J" firstAttribute="leading" secondItem="K1P-ab-UvH" secondAttribute="trailing" constant="11.5" id="2a0-Hh-Xhg"/>
+                                            <constraint firstItem="myl-mV-eV0" firstAttribute="leading" secondItem="N8a-hW-U4J" secondAttribute="trailing" constant="33.5" id="KMf-Ww-wiC"/>
+                                            <constraint firstItem="xyE-uC-a4O" firstAttribute="bottom" secondItem="N8a-hW-U4J" secondAttribute="bottom" id="Meh-EO-fxc"/>
+                                            <constraint firstItem="N8a-hW-U4J" firstAttribute="centerX" secondItem="j2e-Xb-occ" secondAttribute="centerX" id="Re4-wU-HLR"/>
+                                            <constraint firstItem="N8a-hW-U4J" firstAttribute="top" secondItem="j2e-Xb-occ" secondAttribute="top" constant="20" id="VKd-XL-nJ7"/>
+                                            <constraint firstItem="xyE-uC-a4O" firstAttribute="leading" secondItem="N8a-hW-U4J" secondAttribute="trailing" constant="28.5" id="gLf-mY-U4o"/>
+                                            <constraint firstItem="K1P-ab-UvH" firstAttribute="centerY" secondItem="N8a-hW-U4J" secondAttribute="centerY" id="h1K-9Y-lZm"/>
+                                            <constraint firstAttribute="bottom" secondItem="N8a-hW-U4J" secondAttribute="bottom" constant="12" id="mLm-eg-ZRr"/>
+                                            <constraint firstItem="myl-mV-eV0" firstAttribute="top" secondItem="N8a-hW-U4J" secondAttribute="top" id="oVW-iQ-oJ0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="kittenCareButton" destination="myl-mV-eV0" id="KsJ-1Q-Ozd"/>
+                                            <outlet property="kittenCollectionImage" destination="N8a-hW-U4J" id="azy-2B-UH8"/>
+                                            <outlet property="kittenExamineButton" destination="xyE-uC-a4O" id="FLk-dd-DZd"/>
+                                            <outlet property="kittenNameLabel" destination="K1P-ab-UvH" id="Mvr-IX-DlK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dW5-Pd-TW4" id="rRD-6R-I0I"/>
+                                    <outlet property="delegate" destination="dW5-Pd-TW4" id="BcR-gv-rAr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QtY-sS-2Bw" firstAttribute="top" secondItem="ONQ-cQ-C72" secondAttribute="top" constant="19" id="3eG-lG-pXm"/>
+                            <constraint firstItem="QtY-sS-2Bw" firstAttribute="leading" secondItem="ONQ-cQ-C72" secondAttribute="leading" constant="34" id="CQ0-wU-vH2"/>
+                            <constraint firstItem="ONQ-cQ-C72" firstAttribute="trailing" secondItem="QtY-sS-2Bw" secondAttribute="trailing" constant="33" id="TM9-tL-Ou9"/>
+                            <constraint firstItem="ONQ-cQ-C72" firstAttribute="bottom" secondItem="QtY-sS-2Bw" secondAttribute="bottom" constant="63" id="Uvk-Xh-PHf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ONQ-cQ-C72"/>
+                    </view>
+                    <connections>
+                        <outlet property="kittenCollectionView" destination="QtY-sS-2Bw" id="mol-hP-kl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zey-yz-cwL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1927.2" y="150"/>
+        </scene>
+        <!--Kitten Care Room View Controller-->
+        <scene sceneID="6q8-Dt-XOa">
+            <objects>
+                <viewController id="6vN-dF-CeM" customClass="KittenCareRoomViewController" customModule="MyKittens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nlv-JR-8ZA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZy-Vv-hny">
+                                <rect key="frame" x="123.66666666666669" y="211" width="167" height="136"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pZy-Vv-hny" secondAttribute="height" multiplier="167:136" id="Y2m-Cm-oLE"/>
+                                    <constraint firstAttribute="width" constant="167" id="t8e-dj-cZG"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sz8-5U-CQx" appends="YES" id="Cjl-YU-Tu1"/>
+                                    <outletCollection property="gestureRecognizers" destination="vdC-oP-TsF" appends="YES" id="ptd-Fu-5mr"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19S-t2-Vaz">
+                                <rect key="frame" x="149.33333333333334" y="438" width="50.333333333333343" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6O-qQ-hTY">
+                                <rect key="frame" x="219.66666666666666" y="437" width="50.666666666666657" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="ddV-Uk-fXE">
+                                <rect key="frame" x="242" y="358" width="48" height="72"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ddV-Uk-fXE" secondAttribute="height" multiplier="2:3" id="MXy-tZ-jMA"/>
+                                    <constraint firstAttribute="height" constant="72" id="fo1-er-n4e"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HGf-b1-dPn" appends="YES" id="efi-Qk-Asa"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-Nz-tq5">
+                                <rect key="frame" x="77.666666666666671" y="211" width="28" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LXZ-Nz-tq5" secondAttribute="height" multiplier="28:25" id="4pv-wU-ixJ"/>
+                                    <constraint firstAttribute="width" constant="28" id="8cX-J4-H7Z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGj-i7-l6u">
+                                <rect key="frame" x="204.66666666666666" y="438" width="5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="2HF-Iq-yQP">
+                                <rect key="frame" x="113" y="369" width="56" height="51"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2HF-Iq-yQP" secondAttribute="height" multiplier="56:51" id="GDc-0O-LQl"/>
+                                    <constraint firstAttribute="width" constant="56" id="eWX-pd-lP8"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Buc-lR-LEI" appends="YES" id="Xab-Qq-W7k"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="19S-t2-Vaz" firstAttribute="top" secondItem="pZy-Vv-hny" secondAttribute="bottom" constant="91" id="Ah9-iU-qjd"/>
+                            <constraint firstItem="H6O-qQ-hTY" firstAttribute="top" secondItem="pZy-Vv-hny" secondAttribute="bottom" constant="90" id="BLy-fO-XbQ"/>
+                            <constraint firstItem="LXZ-Nz-tq5" firstAttribute="top" secondItem="pZy-Vv-hny" secondAttribute="top" id="BQE-ar-HhF"/>
+                            <constraint firstItem="2HF-Iq-yQP" firstAttribute="leading" secondItem="3kX-ex-VZT" secondAttribute="leading" constant="113" id="Fmf-vS-N4J"/>
+                            <constraint firstItem="3kX-ex-VZT" firstAttribute="trailing" secondItem="ddV-Uk-fXE" secondAttribute="trailing" constant="124" id="I7y-RX-GRG"/>
+                            <constraint firstItem="H6O-qQ-hTY" firstAttribute="leading" secondItem="CGj-i7-l6u" secondAttribute="trailing" constant="10" id="SIs-AR-Et2"/>
+                            <constraint firstItem="CGj-i7-l6u" firstAttribute="leading" secondItem="19S-t2-Vaz" secondAttribute="trailing" constant="5" id="g6y-qq-ih1"/>
+                            <constraint firstItem="pZy-Vv-hny" firstAttribute="top" secondItem="3kX-ex-VZT" secondAttribute="top" constant="123" id="hQX-0b-xJN"/>
+                            <constraint firstItem="CGj-i7-l6u" firstAttribute="centerX" secondItem="3kX-ex-VZT" secondAttribute="centerX" id="lq7-Bf-FlC"/>
+                            <constraint firstItem="CGj-i7-l6u" firstAttribute="top" secondItem="pZy-Vv-hny" secondAttribute="bottom" constant="91" id="mGt-1h-kFd"/>
+                            <constraint firstItem="pZy-Vv-hny" firstAttribute="leading" secondItem="LXZ-Nz-tq5" secondAttribute="trailing" constant="18" id="sS6-BE-Yal"/>
+                            <constraint firstItem="2HF-Iq-yQP" firstAttribute="top" secondItem="pZy-Vv-hny" secondAttribute="bottom" constant="22" id="xRX-2J-ld9"/>
+                            <constraint firstItem="ddV-Uk-fXE" firstAttribute="top" secondItem="pZy-Vv-hny" secondAttribute="bottom" constant="11" id="yib-Qd-TwQ"/>
+                            <constraint firstItem="pZy-Vv-hny" firstAttribute="centerX" secondItem="3kX-ex-VZT" secondAttribute="centerX" id="ywR-OU-F6O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3kX-ex-VZT"/>
+                    </view>
+                    <connections>
+                        <outlet property="heartImage" destination="LXZ-Nz-tq5" id="VCa-pq-wJ9"/>
+                        <outlet property="kittenBottleImage" destination="ddV-Uk-fXE" id="7K9-Q6-A6H"/>
+                        <outlet property="kittenCareHunger" destination="H6O-qQ-hTY" id="cgV-9Z-Iz0"/>
+                        <outlet property="kittenCareImage" destination="pZy-Vv-hny" id="DHt-zi-fTH"/>
+                        <outlet property="kittenCareLove" destination="19S-t2-Vaz" id="gK6-bq-p56"/>
+                        <outlet property="kittenFoodImage" destination="2HF-Iq-yQP" id="A3x-gf-SDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeS-fi-cy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sz8-5U-CQx">
+                    <connections>
+                        <action selector="kittenCareTap:" destination="6vN-dF-CeM" id="ISN-sb-1cZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="vdC-oP-TsF">
+                    <connections>
+                        <action selector="kittenCareSwipe:" destination="6vN-dF-CeM" id="U3h-m7-Ff5"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HGf-b1-dPn">
+                    <connections>
+                        <action selector="kittenBottlePan:" destination="6vN-dF-CeM" id="KUu-cu-9tY"/>
+                        <outlet property="delegate" destination="6vN-dF-CeM" id="hti-vS-H3d"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Buc-lR-LEI">
+                    <connections>
+                        <action selector="kittenFoodPan:" destination="6vN-dF-CeM" id="Y0F-Qg-rFz"/>
+                        <outlet property="delegate" destination="6vN-dF-CeM" id="Hba-So-E0A"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2933.3333333333335" y="150.66964285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AbO-bv-rSm">
+            <objects>
+                <navigationController id="GEG-1h-hcI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N1q-fC-pbx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.50661292429310145" green="1" blue="0.53322443739763026" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ng0-Xy-b5P" kind="relationship" relationship="rootViewController" id="yZD-uk-7Jk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MwV-Hu-Znu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="151"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="0" width="332" height="293"/>
+        <image name="1" width="332" height="293"/>
+        <image name="2" width="332" height="293"/>
+        <image name="3" width="332" height="293"/>
+        <image name="4" width="332" height="293"/>
+        <image name="5" width="332" height="293"/>
+        <image name="bottle" width="500" height="500"/>
+        <image name="food" width="201" height="237"/>
+        <image name="heart" width="600" height="534"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CI6-Ga-hg2"/>
+    </inferredMetricsTieBreakers>
 </document>
